@@ -1,21 +1,88 @@
-*{
-    box-sizing: border-box;
+:root {
+  --yellow: #fcb72b;
+  --dark-navy: #495567;
+  --dim-grey: #939caa;
+  --light-grey: #e5ecf4;
+  --snow: #f2f5f9;
+  --light-yellow: #fff4df;
+  --dark-grey: #333a44;
+
+  --space-mono: 'Space-mono', sans-serif;
+  --space-mono: 'Space-mono', sans-serif;
 }
-body{
-    margin: 0;
-    font-family: sans-serif;
+* {
+  box-sizing: border-box;
 }
-img{
-    display: block;
-    max-width: 100%;
+body {
+  margin: 0;
+  font-family: sans-serif;
 }
-a{
-    text-decoration: none;
-    color: inherit;
+img {
+  display: block;
+  max-width: 100%;
 }
-ul{
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.menu {
+  height: 64px;
+  width: 100%;
+  padding-top: 22px;
+  padding-left: 32px;
+  padding-bottom: 22px;
+  padding-right: 22px;
+  display: flex;
+  background-color: white;
+}
+.logo-nav {
+  margin-inline: auto;
+}
+.menu-options {
+  display: none;
+}
+.header {
+  width: 100%;
+  height: 687px;
+  background-image: url(../assets/images/home-hero-mobile.jpg);
+  background-size: cover;
+}
+.main {
+  padding: 120px 32px 120px 32px;
+}
+.info-app {
+  display: flex;
+  flex-direction: column;
+  height: 792px;
+  justify-content: space-between;
+}
+.info-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+}
+.info-icon {
+  width: 56px;
+  height: 56px;
+}
+.img-main {
+  border-radius: 50%;
+}
+.applications-footer {
+  width: 100%;
+  height: 320px;
+  background-color: var(--dark-navy);
+}
+.social {
+  width: 100%;
+  height: 438px;
+  background-color: var(--dark-grey);
 }
