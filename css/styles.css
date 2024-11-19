@@ -151,6 +151,7 @@ ul {
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  justify-items: center;
 }
 .header {
   width: 100%;
@@ -330,7 +331,7 @@ ul {
     flex-direction: row;
     height: 792px;
     justify-content: space-between;
-    margin-bottom: 200px;
+    margin-bottom: 0;
   }
   .info-app::after{
     content: '';
@@ -379,6 +380,7 @@ ul {
 .img-main {
   border-radius: 50%;
   margin-bottom: 56px;
+  justify-self: center;
 }
 .section-learnmore{
   margin-bottom: 120px;
@@ -389,6 +391,12 @@ ul {
 @media screen and (width>=768px){
   .section-learnmore{
     width: 573px;
+  }
+}
+@media screen and (width>=1440px){
+  .section-learnmore{
+    width: 443px;
+    text-align: left;
   }
 }
 .applications-footer {
@@ -460,6 +468,11 @@ ul {
     padding-left: 97px;
   }
 }
+@media screen and (width>=1440px){
+  .header-about{
+    background-image: url(../assets/images/about-hero-desktop.jpg);
+  }
+}
 .header-careers{
   background-image: url(../assets/images/careers-location-hero-mobile.jpg);
 }
@@ -522,12 +535,13 @@ ul {
 }
 .section-apply{
   height: 1220px;
+  width: 100%;
   justify-content: space-between;
 }
 @media screen and (width>=768px){
   .section-apply{
     height: 848px;
-    width: 689px;
+    width: 100%;
     justify-content: space-between;
   }
   .main-careers{
@@ -625,10 +639,10 @@ ul {
     top: 2742px;
   }
   .left-downward-arrow-zero{
-    /* display: block;
+    display: block;
     position: absolute;
     right:-386px;
-    top: 3710px; */
+    top: 3710px; 
   }
   .white-circles-options{
     display: block;
@@ -641,12 +655,6 @@ ul {
     position: absolute;
     right:-6px;
     top: 690px;
-  }
-  .right-arrow-topimg{
-    display: block;
-    position: absolute;
-    left: -127px;
-    top: 1320px;
   }
 }
 @media screen and (width>=1440px){
@@ -671,20 +679,20 @@ ul {
   .left-downward-arrow{
     display: block;
     position: absolute;
-    top: 2110px;
+    top: 2000px;
     right: 0;
   }
   .right-arrow-topimg{
     display: block;
     position: absolute;
     left: -127px;
-    top: 2742px;
+    top: 2199px;
   }
   .left-downward-arrow-zero{
-    /* display: block;
+    display: block;
     position: absolute;
     right:-386px;
-    top: 3710px; */
+    top: 2770px; 
   }
   .white-circles-options{
     display: block;
@@ -698,10 +706,32 @@ ul {
     right:-6px;
     top: 690px;
   }
-  .right-arrow-topimg{
+  /* .right-arrow-topimg{
     display: block;
     position: absolute;
     left: -127px;
     top: 1320px;
+  } */
+  .row-reverse{
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-between;
+  }
+  .row{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+  }
+  .info-card-images{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .text-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
+
